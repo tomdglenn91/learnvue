@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Vue</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div id="app">
+
+      <!-- If Directive -->
+      <div>
+        <span v-if="visible">I'm invisible</span>
+        <span v-if="!visible">I'm visible?</span>
+      </div>
+
+    </div>
+  </body>
+  <script src="https://unpkg.com/vue"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        visible: false,
+      },
+    })
+  </script>
+</html>
